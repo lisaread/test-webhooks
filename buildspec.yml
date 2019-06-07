@@ -1,0 +1,14 @@
+version: 0.2
+            
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+  build:
+    commands:
+      - echo "check env variables"
+      - echo "run print env"
+      - printenv
+      - echo "print env ended"
+      - echo "check specific"
+      - echo $CODEBUILD_WEBHOOK_TRIGGER
